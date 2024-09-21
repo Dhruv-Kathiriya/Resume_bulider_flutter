@@ -25,16 +25,20 @@ class _SpalshscreenState extends State<Spalshscreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Spacer(),
+            Spacer(),
+            Spacer(),
             Image.network(
               "https://static.naukimg.com/s/0/0/i/resume360/pwa/resume-maker-landing/v0/heroImg.png",
               fit: BoxFit.contain,
             ),
             const Spacer(),
-            CircularProgressIndicator(
+            const Spacer(),
+            const Spacer(),
+            const Spacer(),
+            LinearProgressIndicator(
               color: Colors.black,
               backgroundColor: Colors.grey.shade300,
             ),
-            Spacer(),
           ],
         ),
       ),

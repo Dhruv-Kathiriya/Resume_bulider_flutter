@@ -50,8 +50,10 @@ class _HomePageState extends State<HomePage> {
                 children: [
                   GestureDetector(
                     onTap: () {
-                      Navigator.pushNamed(
-                          context, resumeBulider[index]['path']);
+                      Navigator.pushNamed(context, resumeBulider[index]['path'])
+                          .then(
+                        (value) => setState(() {}),
+                      );
                     },
                     child: Container(
                       height: 100.h,
@@ -83,7 +85,12 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       floatingActionButton: Visibility(
-        visible: image != null,
+        visible: image != null &&
+            name.isNotEmpty &&
+            add.isNotEmpty &&
+            number.isNotEmpty &&
+            passWord.isNotEmpty &&
+            email.isNotEmpty,
         child: FloatingActionButton.extended(
           // backgroundColor: Theme.of(context).primaryColor,
           onPressed: () {

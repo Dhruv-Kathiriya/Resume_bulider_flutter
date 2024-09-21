@@ -11,6 +11,7 @@ String number = "";
 String passWord = "";
 int index = 0;
 String email = "";
+String language = "";
 bool isVisible = true;
 
 String name = "";
@@ -41,6 +42,7 @@ class _ContactPageState extends State<ContactPage> {
   TextEditingController addresscontrol = TextEditingController();
   TextEditingController numbercontrol = TextEditingController();
   TextEditingController passwordcontrol = TextEditingController();
+  TextEditingController languadeontrol = TextEditingController();
 
   @override
   void initState() {
@@ -170,6 +172,7 @@ class _ContactPageState extends State<ContactPage> {
                                 validator: (val) => (val!.isEmpty)
                                     ? "Enter your Name..."
                                     : null,
+                                controller: namecontrol,
                                 keyboardType: TextInputType.name,
                                 cursorColor: Colors.white,
                                 textInputAction: TextInputAction.next,
@@ -214,6 +217,7 @@ class _ContactPageState extends State<ContactPage> {
                                 validator: (val) => (val!.isEmpty)
                                     ? "Enter your E-mail..."
                                     : null,
+                                controller: emailcontrol,
                                 cursorColor: Colors.white,
                                 keyboardType: TextInputType.emailAddress,
                                 style: const TextStyle(
@@ -258,6 +262,7 @@ class _ContactPageState extends State<ContactPage> {
                                 validator: (val) => (val!.isEmpty)
                                     ? "Enter your Address..."
                                     : null,
+                                controller: addresscontrol,
                                 cursorColor: Colors.white,
                                 cursorWidth: 2,
                                 style: const TextStyle(
@@ -291,6 +296,9 @@ class _ContactPageState extends State<ContactPage> {
                                     borderRadius: BorderRadius.circular(18),
                                   ),
                                 ),
+                                onChanged: (val) {
+                                  add = val;
+                                },
                               ),
                               SizedBox(
                                 height: 10.h,
@@ -299,6 +307,7 @@ class _ContactPageState extends State<ContactPage> {
                                 validator: (val) => (val!.isEmpty)
                                     ? "Enter your Number..."
                                     : null,
+                                controller: numbercontrol,
                                 cursorColor: Colors.white,
                                 textInputAction: TextInputAction.done,
                                 keyboardType: TextInputType.number,
@@ -342,6 +351,7 @@ class _ContactPageState extends State<ContactPage> {
                                 validator: (value) => (value!.isEmpty)
                                     ? "Enter your password..."
                                     : null,
+                                controller: passwordcontrol,
                                 obscureText: isVisible,
                                 cursorColor: Colors.white,
                                 style: const TextStyle(
@@ -385,6 +395,9 @@ class _ContactPageState extends State<ContactPage> {
                                     borderRadius: BorderRadius.circular(18),
                                   ),
                                 ),
+                                onChanged: (val) {
+                                  passWord = val;
+                                },
                               ),
                               SizedBox(
                                 height: 30.h,
@@ -393,6 +406,7 @@ class _ContactPageState extends State<ContactPage> {
                                 height: 20.h,
                               ),
                               TextFormField(
+                                controller: languadeontrol,
                                 cursorColor: Colors.white,
                                 cursorWidth: 2,
                                 style: const TextStyle(
@@ -428,6 +442,9 @@ class _ContactPageState extends State<ContactPage> {
                                     borderRadius: BorderRadius.circular(18),
                                   ),
                                 ),
+                                onChanged: (val) {
+                                  language = val;
+                                },
                               ),
                               SizedBox(
                                 height: 25.h,
@@ -512,6 +529,7 @@ class _ContactPageState extends State<ContactPage> {
                                             pickImage(
                                                 source: ImageSource.camera);
                                             setState(() {});
+                                            Navigator.pop(context);
                                           },
                                           label: const Text("Camera"),
                                         ),
@@ -520,6 +538,7 @@ class _ContactPageState extends State<ContactPage> {
                                             pickImage(
                                                 source: ImageSource.gallery);
                                             setState(() {});
+                                            Navigator.pop(context);
                                           },
                                           label: const Text("Gallary"),
                                         ),

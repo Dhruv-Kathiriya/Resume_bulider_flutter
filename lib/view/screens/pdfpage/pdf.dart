@@ -228,7 +228,7 @@ class _PdfState extends State<Pdf> {
                           ),
                         ),
                         pw.Text(
-                          "$name",
+                          " ${name.split(' ')[1]}",
                           style: pw.TextStyle(
                             fontSize: 35.sp,
                             font: pw.Font.times(),
