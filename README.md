@@ -104,3 +104,27 @@ The design philosophy of the Resume Builder App centers around user experience. 
 
 ## 📸 Screenshot 
 
+<img src ="https://github.com/user-attachments/assets/9c0324ca-d2ea-4d54-a88e-b66f3bca22ef" width = "250">
+<img src ="https://github.com/user-attachments/assets/61d012c1-c544-4aff-ac67-b54e3da6aaee" width = "250">
+<img src ="https://github.com/user-attachments/assets/7362285d-78e7-4119-94d5-27f3084f7c24" width = "250">
+<img src ="https://github.com/user-attachments/assets/de5d41df-3174-437b-8648-74085828a5ba" width = "250">
+<img src ="https://github.com/user-attachments/assets/cff4f0d3-6575-4c1c-abb7-9b6f7e211d64" width = "250">
+<img src ="https://github.com/user-attachments/assets/cad02b42-6045-4e85-b719-795dc5c663c5" width = "250">
+<img src ="https://github.com/user-attachments/assets/24d1fa4b-8ddd-404e-b8c3-0fb60b928ca0" width = "250">
+<img src ="https://github.com/user-attachments/assets/7855ef41-5bf3-49d4-bcdb-7daec3ea0534" width = "250">
+<img src ="https://github.com/user-attachments/assets/404cc61e-c1a4-4178-bcb7-576407fdca13" width = "250">
+<img src ="https://github.com/user-attachments/assets/470e2e47-9f72-422f-b126-7e0aae7b867e" width = "250">
+<img src ="https://github.com/user-attachments/assets/1594d99c-963e-433f-a5b1-d904d5812dff" width = "250">
+<img src ="https://github.com/user-attachments/assets/d70b96ea-bdab-41a6-9eed-4706c5d09551" width = "250">
+<img src ="https://github.com/user-attachments/assets/e29d1ff2-ca02-46c1-9da1-d0eafe1c4b43" width = "250">
+<img src ="https://github.com/user-attachments/assets/c63df9ae-39ae-4402-a339-90191adc1f12" width = "250">
+<img src ="https://github.com/user-attachments/assets/18f054ea-2973-4b82-a37d-6dbd179760c4" width = "250">
+
+## 📸 video
+
+
+
+
+<video src = "https://github.com/user-attachments/assets/89aa7c3d-5013-49bd-92ec-274fb1eeaf2e" width = "300">
+
+
